@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchup List</title>
+    <script src="https://kit.fontawesome.com/c64cf4433d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="menu">
+            <ul id="menu">  
+                <li><a >Collection</a></li>
+                <li><a >Invoice Wise</a></li>
+                <li><a >Current Stock</a></li>
+                <li><a >Lost</a></li>
+                <li><a >Proceeding Lost</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuactive"></i>
+        </div>
+        <div class="mainbody">
+            <div id="partycollection">
+                <div class="partydetails">
+                    <h2>Abc Graphichs Pvt Ltd Company Kolkata</h2>
+                    <hr>
+                    <div class="duedetails">
+                        <p>Overdue : 15000/-</p><p>Total Due : 250000/-</p>
+                    </div>
+                    
+                    <div class="fulldetails">
+                        <div class="duedetails">
+                            <p>Due this week : 1500/-</p><p>Due Next Week : 2500/-</p>
+                            <p>Upcoming : 1500/-</p>
+                        </div>
+                        <hr>
+                        <div class="duedetails">
+                            <p>Sales Executive : Yogesh Bhabra</p><p>Credit : 30</p>
+                            <p>Pending From : 15-July-2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="partydetails">
+                    <h2>Abc Graphichs Pvt Ltd Company Kolkata</h2>
+                    <hr>
+                    <div class="duedetails">
+                        <p>Overdue : 15000/-</p><p>Total Due : 250000/-</p>
+                    </div>
+                    
+                    <div class="fulldetails">
+                        <div class="duedetails">
+                            <p>Due this week : 1500/-</p><p>Due Next Week : 2500/-</p>
+                            <p>Upcoming : 1500/-</p>
+                        </div>
+                        <hr>
+                        <div class="duedetails">
+                            <p>Sales Executive : Yogesh Bhabra</p><p>Credit : 30</p>
+                            <p>Pending From : 15-July-2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="partydetails">
+                    <h2>Abc Graphichs Pvt Ltd Company Kolkata</h2>
+                    <hr>
+                    <div class="duedetails">
+                        <p>Overdue : 15000/-</p><p>Total Due : 250000/-</p>
+                    </div>
+                    
+                    <div class="fulldetails">
+                        <div class="duedetails">
+                            <p>Due this week : 1500/-</p><p>Due Next Week : 2500/-</p>
+                            <p>Upcoming : 1500/-</p>
+                        </div>
+                        <hr>
+                        <div class="duedetails">
+                            <p>Sales Executive : Yogesh Bhabra</p><p>Credit : 30</p>
+                            <p>Pending From : 15-July-2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var menubar = document.getElementById('menuactive');
+        var menulist = document.getElementById('menu')
+        menubar.addEventListener('click',function(){
+            menulist.style.display = 'block'
+            menubar.style.display = 'none'
+        })
+        function closeMenu(){
+            menulist.style.display = 'none'
+            menubar.style.display = 'block'
+        }
+    </script>
+    <script>
+        document.getElementsByClassName()
+    </script>
+
+      <script>
+            // Add click event listener to all h2 elements with class "partydetails"
+            const partyDetailsElements = document.querySelectorAll('.partydetails h2');
+            partyDetailsElements.forEach((element) => {
+                element.addEventListener('click', function () {
+                    // Get the parent div with class "fulldetails"
+                    const fullDetailsDiv = this.closest('.partydetails').querySelector('.fulldetails');
+    
+                    // Toggle the display of the full details
+                    fullDetailsDiv.style.display = (fullDetailsDiv.style.display === 'none' || fullDetailsDiv.style.display === '') ? 'block' : 'none';
+                });
+            });
+        </script>
+
+</body>
+</html>
